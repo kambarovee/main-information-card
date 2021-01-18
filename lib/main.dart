@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.teal,
           body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
@@ -37,6 +38,11 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                child: Divider(color: Colors.white),
+                height: 20.0,
+                width: 175.0,
               ),
               Card(
                 color: Colors.white,
