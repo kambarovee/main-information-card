@@ -38,52 +38,46 @@ class MyApp extends StatelessWidget {
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       size: 20.0,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
+                    title: Text(
                       '+ 7 700 700 700',
                       style: TextStyle(
                           fontSize: 20.0,
                           fontFamily: 'Source Sans Pro',
                           color: Colors.teal),
-                    )
-                  ],
+                    ),
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       size: 20.0,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
+                    title: Text(
                       'kambarov.ee@gmail.com',
                       style: TextStyle(
                           fontSize: 20.0,
                           fontFamily: 'Source Sans Pro',
                           color: Colors.teal),
-                    )
-                  ],
+                    ),
+                  ),
                 ),
               )
             ],
